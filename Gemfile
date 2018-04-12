@@ -31,6 +31,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'omniauth-facebook'
+
 gem 'high_voltage'
 
 group :development do
@@ -42,7 +44,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'factory_girl_rails'
+  gem "factory_bot_rails"
   gem 'faker'
   gem 'rspec-rails'
 end
